@@ -94,21 +94,13 @@ jobs:
           #格式如下：
           #sed -i '/自定义项/d' .config
 
-          sed -i '/CONFIG_FIRMWARE_INCLUDE_SOFTETHERVPN_SERVER/d' .config
-          sed -i '/CONFIG_FIRMWARE_INCLUDE_SOFTETHERVPN_CLIENT/d' .config
-          sed -i '/CONFIG_FIRMWARE_INCLUDE_SOFTETHERVPN_CMD/d' .config
           sed -i '/CONFIG_FIRMWARE_ENABLE_USB/d' .config
           sed -i '/CONFIG_FIRMWARE_INCLUDE_FFMPEG_NEW/d' .config
-          sed -i '/CONFIG_FIRMWARE_WEBUI_HIDE_VPN/d' .config
 
           #echo "自定义项=y" >> .config
 
-          echo "CONFIG_FIRMWARE_INCLUDE_SOFTETHERVPN_SERVER=n" >> .config
-          echo "CONFIG_FIRMWARE_INCLUDE_SOFTETHERVPN_CLIENT=n" >> .config
-          echo "CONFIG_FIRMWARE_INCLUDE_SOFTETHERVPN_CMD=n" >> .config
           echo "CONFIG_FIRMWARE_ENABLE_USB=n" >> .config
           echo "CONFIG_FIRMWARE_INCLUDE_FFMPEG_NEW=n" >> .config
-          echo "CONFIG_FIRMWARE_WEBUI_HIDE_VPN=y" >> .config
 
 
           #########################################################################################
